@@ -1,0 +1,29 @@
+{%	extends	'base.html'	%}
+
+{%	block	content	%}
+<div class="tb5">
+	<div class="wrapper4">
+
+				<form method="POST" class="form-signin2">
+					<input name="csrfmiddlewaretoken" value="c6ajCibJnUXunuvK7RZWnrPiVt8ekVw4yqI5Z3Q8dL7IbeJeFeXeyrSkhVwQInzT" type="hidden">
+								<p><label for="id_Penname">PenName:</label>
+
+					<input id="id_Penname" maxlength="200" name="Penname"  type="text" required></p>
+                             <br>
+
+							<p><label for="id_AboutMe">AboutMe:</label>
+				      <input id="id_AboutMe" maxlength="200" name="AboutMe"  type="text" required></p>
+
+					<div class="row">
+					  <input type="submit" class="action-button1 shadow animate blue" value="Save"  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					  <!-- <input type="button" class="action-button1 shadow animate blue"  value="Skip" formnovalidate>-->
+						<a href="{% url 'newhome' %}"><input type="button" class="action-button1 shadow animate blue"  value="Skip" formnovalidate></a>
+					 </div>
+								<!--<button type="submit" class="save	btn	btn-default">Save</button>
+								<button type="submit" class="save	btn	btn-default">Skip</button>-->
+				</form>
+	</div>
+</div>
+
+{%	endblock	%}
+

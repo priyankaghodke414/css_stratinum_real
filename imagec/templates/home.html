@@ -1,0 +1,294 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+
+
+
+
+
+{%	block	content	%}
+
+
+    <div class="w3-container">
+
+
+  <div id="id02" class="w3-modal">
+
+      <div class="w3-center"><br>
+        <span onclick="document.getElementById('id02').style.display='none'" class="w3-closebtn w3-hover-red w3-container w3-padding-8 w3-display-topright" title="Close Modal">&times;</span>
+
+      </div>
+
+      <form class="login" method="POST" action="{% url 'account_login' %}">
+        {% csrf_token %}
+
+
+
+<div class="wrap">
+		<div class="avatar">
+      <img src="{% static 'img/qt_logo.jpg' %}">
+		</div>
+
+
+	<form class="form-signin">
+
+
+		<div id="div_id_login" class="form-group">
+		<div class="controls">
+
+      <input type="email" class="textinput textInput form-control" id="id_login" name="login" placeholder="Email or Mobile number" required="" autofocus="" />
+			<label class="forgot_link1">
+      <input id="option" class="form-check-input" type="checkbox" name="field" value="option">
+    </label>&nbsp;<a class="forgot_link2">remember</a></div></div>
+
+		<div id="div_id_password" class="form-group">
+
+      <input type="password" class="form-control" name="password" placeholder="Password" required="" autofocus="" />
+			<a href="{% url 'account_reset_password' %}" class="forgot_link">forgot ?</a></div>
+	</br>
+<center>
+ <button class="btn btn-lg btn-primary btn-block" type="submit">Sign In</button></center>
+
+	</form>
+
+        <div class="set-1">
+
+            <ul><br>
+			</br>
+				<h2><font size="3px">OR</font></h2>
+
+            <li><a href="{% url 'social:begin' 'twitter' %}?next={{ request.path }}" class="twitter-small">Twitter</a></li>
+            <li><a href="{% url 'social:begin' 'facebook' %}?next={{ request.path }}" class="facebook-small">Facebook</a></li>
+            <li><a href="{% url 'social:begin' 'google-oauth2' %}?next={{ request.path }}" class="gplus-small">GPlus</a></li>
+</center>
+
+			</ul>
+
+            </div>
+		  <p> <font size="2.5"> Don't have an account?<a class="signup_link" href="#signid">SignUP</a></font></p>
+
+</form>
+
+
+    </div>
+  </div>
+</div>
+
+
+<div id="container">
+	<div class="sections">
+		<div class="section section-1">
+	 <div id="wrapper">
+
+	<div class="container1">
+	<div id="content-slider">
+    	<div id="slider">
+        	<div id="mask">
+            <ul>
+           	<li id="first" class="firstanimation">
+            <a href="#">
+            <img src="{% static 'img/img_5.jpg' %}" alt="" >
+
+            </a>
+
+            </li>
+
+            <li id="second" class="secondanimation">
+            <a href="#">
+             <img src="{% static 'img/img_1.jpg' %}" alt="" >
+            </a>
+
+            </li>
+
+            <li id="third" class="thirdanimation">
+            <a href="#">
+            <img src="{% static 'img/img_2.jpg' %}" alt="" >
+            </a>
+
+            </li>
+
+            <li id="fourth" class="fourthanimation">
+            <a href="#">
+             <img src="{% static 'img/img_3.jpg' %}" alt="" >
+            </a>
+
+            </li>
+
+            <li id="fifth" class="fifthanimation">
+            <a href="#">
+             <img src="{% static 'img/img_4.jpg' %}" alt="" >
+            </a>
+
+            </li>
+            </ul>
+            </div>
+            <div class="progress-bar"></div>
+        </div>
+    </div>
+</div>
+
+		 </br>
+
+		 {% if not request.user.is_authenticated %}
+
+           <br class="l-2 right">
+
+		   </br>
+			   <button onclick="document.getElementById('id02').style.display='block'" class="action-button shadow animate blue" >Login</button>
+		 &nbsp;
+
+			 <a class="action-button shadow animate blue"  href="#signid">Signup</a>
+
+
+
+                {% else %}
+		 </br>
+            </br>
+                <a href="{% url 'account_logout' %}">Logout</a>
+                {% endif %}
+
+
+
+
+
+
+
+ </br>
+            </br>
+
+         </br>
+            </br>
+
+
+
+
+</div>
+
+</div>
+		<div class="section section-2">
+			 <img src="{% static 'img/qt.png' %}" alt="" width="46" height="46" align="left" hspace="5vm">
+			<!-- ABOUT US -->
+          <div id="left">
+         <img src="{% static 'img/about.jpg' %}" alt="" width="600" height="600" vspace="100" >
+    </div>
+
+    <div id="right">
+        <p>About QT</p>
+       <p><font size="3">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+		   Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
+		   Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.
+		   Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra.
+		   Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.
+		   Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui.
+	   </font>
+	   </p>
+
+    </div>
+
+		</div>
+
+		<div class="section section-3">
+<img src="{% static 'img/qt.png' %}" alt="" width="46" height="46" align="left">
+
+			   <div id="right1">
+         <img src="{% static 'img/about.jpg' %}" alt="" width="600" height="600" vspace="100" >
+    </div>
+
+    <div id="left1">
+        <p>How QT Works</p>
+       <p><font size="3">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+		   Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
+		   Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.
+		   Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra.
+		   Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.
+		   Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui.
+	   </font>
+	   </p>
+
+    </div>
+
+
+		</div>
+
+		<div class="section section-4" id="signid">
+<img src="{% static 'img/qt.png' %}" alt="" width="46" height="46" align="left">
+
+
+{% load crispy_forms_tags %}
+
+{% load i18n %}
+
+
+<div class="wrapper2">
+<form class="form-signin" id="signup_form" method="post" action="{% url 'account_signup' %}">
+  <h1 class="form-signin-heading"><center></center></h1>
+
+  <input name="csrfmiddlewaretoken" value="Y72toDc0YUeAMoFgmw7jRGv8uPWsj0093f0QF50kqghzUDFnuSGNrKwRUHAWvNMl" type="hidden">
+
+
+<div id="div_id_username" class="form-group">
+
+	<div class="controls ">
+		<input autofocus="autofocus" class="textinput textInput form-control" id="id_username" maxlength="150" minlength="5" name="username" placeholder="Username" required="" type="text"> </div> </div> <div id="div_id_email" class="form-group">
+
+	<div class="controls ">
+		<input class="textinput textInput form-control" id="id_email" name="email" placeholder="E-mail address" required="" type="email"> </div> </div> <div id="div_id_password1" class="form-group">
+
+	<div class="controls ">
+		<input class="textinput textInput form-control" id="id_password1" name="password1" placeholder="Password" required="" type="password"> </div> </div> <div id="div_id_password2" class="form-group">
+
+	<div class="controls ">
+		<input class="textinput textInput form-control" id="id_password2" name="password2" placeholder="Password (again)" required="" type="password"> </div> </div>
+
+
+  <button type="submit" class="btn btn-lg btn-primary btn-block">Sign Up</button>
+
+
+
+	 <div class="set-1">
+			</br>
+		 <h2><font size="3px">OR</font></h2>
+
+            <ul><center>
+
+            <li><a href="{% url 'social:begin' 'twitter' %}?next={{ request.path }}" class="twitter-small">Twitter</a></li>
+            <li><a href="{% url 'social:begin' 'facebook' %}?next={{ request.path }}" class="facebook-small">Facebook</a></li>
+            <li><a href="{% url 'social:begin' 'google-oauth2' %}?next={{ request.path }}" class="gplus-small">GPlus</a></li>
+</center>
+
+			</ul>
+
+            </div>
+
+
+
+
+
+
+</form>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+        </div>
+	</div>
+</div>
+
+
+
+
+
+
+{%	endblock	%}
+
+

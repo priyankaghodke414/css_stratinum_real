@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{%	block	content	%}
+<div class="container">
+    <h1>Profile</h1>
+    <p>Username: {{ user }}</p>
+    <p>Email: {{ user.email }}</p>
+            {% if user.album.image %}
+                            <img src="{{ user.album.image.url }}" class="img-responsive">
+
+                         {% else %}
+                            <h3>No image to display</h3>
+                        {% endif %}
+     <div>
+               {% if user.is_authenticated %}
+
+         <h1>{{	user.post.Penname	}}</h1>
+         <p>{{user.post.AboutMe|linebreaksbr}}</p>
+
+					<a	class="btn	btn-default" href="{% url 'post_edit'	%}"><span	class="glyphicon	glyphicon-pencil"></span></a>
+{% endif %}
+
+
+
+				</div>
+
+</div>
+{%	endblock	%}
+
+
+

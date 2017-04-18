@@ -1,0 +1,51 @@
+
+.animate
+{
+	transition: all 0.1s;
+	-webkit-transition: all 0.1s;
+}
+
+.action-button
+{
+	position: relative;
+	padding: 5px 20px;
+  margin: 0px 10px 10px 0px;
+  float: 100px;
+	border-radius: 10px;
+	font-family: 'Times new Roman', cursive;
+	font-size: 25px;
+	color: #FFF;
+	text-decoration: none;	
+}
+
+.blue
+{
+	background-color: #3498DB;
+	border-bottom: 5px solid #2980B9;
+	text-shadow: 0px -2px #2980B9;
+}
+
+
+
+.action-button:active
+{
+	transform: translate(0px,5px);
+  -webkit-transform: translate(0px,5px);
+	border-bottom: 1px solid;
+}
+
+.action-button1
+{
+	position: relative;
+	padding: 10px 40px;
+  margin: 30px 20px 0px 0px;
+  float: 100px;
+	border-radius: 8px;
+	font-family: 'Times new Roman', cursive;
+	font-size: 20px;
+	color: #FFF;
+	text-decoration: none;
+	selector: '[type="submit"]:not([formnovalidate])',
+    disabled: ''
+
+}

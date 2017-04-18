@@ -1,0 +1,55 @@
+
+.set-1 ul li{display:inline-block;margin-left:30px;margin-top:30px;}
+
+
+
+.set-1 a {
+	position: relative;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Oswald';
+    display: block;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+   	width: 87px;
+	text-align: center;
+
+
+
+
+
+height:29px;
+cursor:pointer;
+overflow:hidden;
+
+font: 0/0 a;
+    text-shadow: none;
+    color: transparent;
+}
+
+
+
+.w3-model l{
+}
+
+l.p{
+}
+
+
+a.twitter-small{background:#ffffff url("img/twitter.png") no-repeat center center;}
+
+
+
+
+a.facebook-small{background:#FFFFFF url("img/fb1.png") no-repeat center center;}
+
+
+
+
+
+
+a.gplus-small{background:#ffffff url("img/gplus.png") no-repeat center center;}
+
+
+

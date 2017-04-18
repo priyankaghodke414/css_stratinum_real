@@ -1,0 +1,186 @@
+body {
+  background: #eee !important;
+}
+
+.wrapper {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  padding-top: 100px;
+
+}
+.wrapper2 {
+  margin-top: 30px;
+  margin-bottom: 80px;
+  padding-top: 20px;
+
+}
+
+.wrapper3 {
+  margin-top: 30px;
+  margin-bottom: 80px;
+  padding: 100px 60px 100px 40px;
+
+
+}
+
+
+.wrapper4 {
+
+  margin-bottom: 80px;
+  padding: 100px 100px 400px 100px;
+  border-radius:10px;
+
+
+
+}
+
+h2 {
+   overflow: hidden;
+   text-align: center;
+   color: grey;
+}
+h2:before,
+h2:after {
+   background-color: #000;
+   content: "";
+   display: inline-block;
+   height: 1px;
+   position: relative;
+   vertical-align: middle;
+   width: 50%;
+}
+h2:before {
+   right: 0.5em;
+   margin-left: -50%;
+}
+h2:after {
+   left: 0.5em;
+   margin-right: -50%;
+}
+
+
+
+
+.omb_login .omb_loginOr {
+	position: relative;
+	font-size: 1.5em;
+	color: #aaa;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+.omb_login .omb_loginOr .omb_hrOr {
+	background-color: #cdcdcd;
+	height: 1px;
+	margin-top: 0px !important;
+	margin-bottom: 0px !important;
+}
+.omb_login .omb_loginOr .omb_spanOr {
+	display: block;
+	position: absolute;
+	left: 50%;
+
+	margin-left: -1.5em;
+	background-color: white;
+	width: 3em;
+	text-align: center;
+}
+
+.form-signin1 {
+
+  max-width: 480px;
+  padding: 35px 35px 45px;
+  margin: 0 auto;
+  background-color: #fff;
+border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.form-signin {
+
+  max-width: 450px;
+  padding: 5px 35px 45px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.form-signin2 {
+
+  max-width: 450px;
+  padding: 5px 35px 45px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.form-signin .form-signin-heading,
+.form-signin .form-control {
+  position: relative;
+  font-size: 16px;
+  height: 70px;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="text"] {
+  margin-bottom: -1px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.form-signin2 input[type="text"] {
+
+  width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+.form-signin input[type="password"] {
+  margin-bottom: -1px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.form-signin input[type="repassword"] {
+  margin-bottom: 20px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+
+.app-button{
+    background-color: #3498db;
+    width: 100px;
+    margin-top:50;
+    display:inline-block;
+    line-height: 40px;
+    border-radius: 10px;
+
+}
+.row{
+  text-align:center;
+  /*the same margin which is every button have, it is for small screen, and if you have many buttons.*/
+  margin-left:60px;
+  marin-right:-20px;
+}
+
+.basic-grey {
+    margin-left:auto;
+    margin-right:auto;
+    max-width: 500px;
+    background: #F7F7F7;
+    padding: 50px 30px 50px 20px;
+    font: 12px Georgia, "Times New Roman", Times, serif;
+    color: #888;
+    text-shadow: 1px 1px 1px #FFF;
+    border:1px solid #E4E4E4;
+}
+
+.tb5 {
+	background-color: #00284d;
+}

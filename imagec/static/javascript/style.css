@@ -1,0 +1,37 @@
+p {
+    margin-bottom: 1.0em;
+    font-size: 3;
+  }
+
+p.normal {
+        font-style: normal;
+        }
+#slider {
+	position: relative;
+	margin:  -25px 160px;
+	width: 890px;
+}
+
+#slider .viewer {
+    top: 100px;
+	width: 1000px;
+	height: 400px;
+
+
+}
+
+#slider .slide {
+
+	width: 1000px;
+	height: 400px;
+
+}
+
+
+#wrapper {
+
+    overflow : auto;
+	background:#0d0d0d;
+
+
+}
